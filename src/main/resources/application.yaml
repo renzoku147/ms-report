@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ms-report
+
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+      retry:
+        max-attempts: 20
+        max-interval: 15000
+        initial-interval: 10000
+
+  eureka:
+    instance:
+      hostname: localhost
